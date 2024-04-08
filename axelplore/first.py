@@ -23,8 +23,8 @@ def demo(n, block_orientation, rotate, inreverse):
     for i in range(msg_length):
         with canvas(device) as draw:
             text(draw, (0, 0), msg[i], fill="white")
-            print("draw", msg[i])
             time.sleep(1)
+            print("draw", msg[i])
 
 
 if __name__ == "__main__":
