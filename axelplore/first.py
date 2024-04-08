@@ -17,7 +17,7 @@ def demo(n, block_orientation, rotate, inreverse):
                      rotate=rotate or 0, blocks_arranged_in_reverse_order=inreverse)
     print("Created device")
 
-    msg = "Hallo Lisa"
+    msg = "Hallo Lisa "
     msg_length= len(msg)
 
     for i in range(msg_length):
