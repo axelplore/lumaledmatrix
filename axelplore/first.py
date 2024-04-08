@@ -14,8 +14,11 @@ serial = spi(port=0, device=0, gpio=noop())
 device = max7219(serial)
 print("Created device")
 
+msg = "Hallo Lisa"
+msg_length= len(msg)
 
-with canvas(device) as draw:
-    text(draw, (0, 0), "A", fill="white")
-print("draw 'A'")
-time.sleep(5)
+for i in range(msg_length):
+    with canvas(device) as draw:
+        text(draw, (0, 0), msg[i], fill="white")
+        print("draw", msg[i])
+        time.sleep(1)
