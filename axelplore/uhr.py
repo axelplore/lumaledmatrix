@@ -15,7 +15,7 @@ from luma.core.legacy.font import proportional, CP437_FONT, LCD_FONT, TINY_FONT
 def demo(n, block_orientation, rotate, inreverse):
     # create device
     serial = spi(port=0, device=0, gpio=noop())
-    device = max7219(serial, cascaded=n or 7, block_orientation=block_orientation,
+    device = max7219(serial, cascaded=n or 1, block_orientation=block_orientation,
                      rotate=rotate or 0, blocks_arranged_in_reverse_order=inreverse)
     print("Created device")
 
